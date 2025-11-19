@@ -2,6 +2,27 @@
 
 An interactive text-based game where you play as an ancient, primordial mountain seeking revenge against the pesky humans who have disturbed your billion-year slumber.
 
+## 🎮 Two Versions Available
+
+### 🌟 Enhanced Edition (Recommended!)
+`python3 grumpy_mountain_enhanced.py`
+
+**NEW FEATURES:**
+- 💾 Save/Load game functionality
+- 📊 Comprehensive statistics tracking
+- 📋 In-game combo reference guide
+- 💡 Contextual hints and tips
+- 🎯 Track your most devastating disasters
+- ⏱️ Session statistics and performance metrics
+
+### 📦 Classic Edition
+`python3 grumpy_mountain.py` - The original pure experience
+
+### 🎬 Watch a Demo
+`python3 demo_playthrough.py` - See a scripted playthrough
+
+---
+
 ## 📖 Story
 
 You are **THE MOUNTAIN**—4.5 billion years old, eternal, and thoroughly annoyed. For eons you've enjoyed peaceful silence, but then the humans arrived. They mine your minerals, cut down your forests, pollute your rivers, and worst of all—they've installed neon signs that keep you awake at night.
@@ -144,10 +165,19 @@ Continue until population = 0!
 
 ## 🛑 Commands
 
+### Classic Edition Commands
 - **Elemental combination**: `fire + wind`, `earth water`, etc.
 - **Random event**: `random`
 - **Quit game**: `quit`, `exit`, or `q`
 - **Continue**: Press ENTER between turns
+
+### Enhanced Edition Additional Commands
+- **View combo guide**: `combos` or `help` - See all available disasters
+- **Statistics**: `stats` - View your performance metrics
+- **Hint**: `hint` - Get strategic tips
+- **Save game**: `save` - Save your current progress
+- **Load game**: `load` - Resume from save file
+- All classic commands also work!
 
 ## 💡 Features
 
