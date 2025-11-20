@@ -94,11 +94,105 @@
             align-items: center;
             gap: 5px;
         }
+
+        .abilities {
+            margin-top: 30px;
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .ability-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            border: 3px solid #4a5568;
+            padding: 15px 25px;
+            font-family: 'Courier New', monospace;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+            position: relative;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .ability-btn:hover:not(:disabled) {
+            transform: translateY(-4px) scale(1.05);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+            border-color: #ffd700;
+        }
+
+        .ability-btn:active:not(:disabled) {
+            transform: translateY(-2px) scale(1.02);
+        }
+
+        .ability-btn:disabled {
+            background: linear-gradient(135deg, #4a4a4a 0%, #2a2a2a 100%);
+            cursor: not-allowed;
+            opacity: 0.5;
+        }
+
+        .ability-btn.wind {
+            background: linear-gradient(135deg, #7ec8e3 0%, #4a90e2 100%);
+        }
+
+        .ability-btn.earthquake {
+            background: linear-gradient(135deg, #8b4513 0%, #654321 100%);
+        }
+
+        .ability-btn.blizzard {
+            background: linear-gradient(135deg, #e0f7ff 0%, #4db8ff 100%);
+            color: #000;
+        }
+
+        .ability-btn.growth {
+            background: linear-gradient(135deg, #48bb78 0%, #2f855a 100%);
+        }
+
+        .cooldown-indicator {
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 10px;
+            color: #ff6b6b;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 2px 8px;
+            border-radius: 3px;
+        }
+
+        h2 {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #ffd700;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
     </style>
 </head>
 <body>
     <h1>🏔️ Mountain & City: A Pixel Narrative</h1>
     <canvas id="gameCanvas" width="800" height="600"></canvas>
+
+    <h2>⚡ Mountain's Abilities - Fight Back Against Pollution!</h2>
+    <div class="abilities">
+        <button class="ability-btn wind" id="btnWind">
+            🌪️ WIND<br>
+            <small>Clear the Air</small>
+        </button>
+        <button class="ability-btn earthquake" id="btnEarthquake">
+            🌋 EARTHQUAKE<br>
+            <small>Shake the City</small>
+        </button>
+        <button class="ability-btn blizzard" id="btnBlizzard">
+            ❄️ BLIZZARD<br>
+            <small>Freeze Everything</small>
+        </button>
+        <button class="ability-btn growth" id="btnGrowth">
+            🌿 GROWTH<br>
+            <small>Reclaim the Land</small>
+        </button>
+    </div>
 
     <div class="controls">
         <button id="btnPause">⏸️ Pause</button>
@@ -119,11 +213,23 @@
                 <span id="timeDisplay">Day 1</span>
             </div>
             <div class="stat">
-                <span>💨 Pollution Level:</span>
+                <span>💨 Pollution:</span>
                 <span id="pollutionDisplay">0%</span>
             </div>
             <div class="stat">
-                <span>🏔️ Mountain Mood:</span>
+                <span>📢 Noise:</span>
+                <span id="noiseDisplay">0%</span>
+            </div>
+            <div class="stat">
+                <span>😨 Fear:</span>
+                <span id="fearDisplay">0%</span>
+            </div>
+            <div class="stat">
+                <span>👥 Population:</span>
+                <span id="populationDisplay">100%</span>
+            </div>
+            <div class="stat">
+                <span>🏔️ Mountain:</span>
                 <span id="mountainMoodDisplay">Peaceful</span>
             </div>
         </div>
