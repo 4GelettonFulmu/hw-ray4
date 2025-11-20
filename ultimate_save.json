@@ -1,0 +1,23 @@
+{
+  "population": 13781,
+  "fear_index": 100,
+  "resistance": null,
+  "last_attack_type": "earth",
+  "turn": 5,
+  "stats": {
+    "total_deaths": 28462,
+    "total_migration": 7757,
+    "disasters_used": {
+      "Plasma Storm": 1,
+      "Volcanic Eruption": 1,
+      "Hurricane": 1,
+      "Silent Thunderstorm": 1,
+      "Mudslide": 1
+    },
+    "random_events_triggered": 0,
+    "max_fear_reached": 100,
+    "resistances_developed": 0,
+    "start_time": null
+  },
+  "save_time": "2025-11-19T23:59:34.828972"
+}

@@ -1,0 +1,30 @@
+{
+  "population": 8,
+  "fear_index": 100,
+  "resistance": null,
+  "last_attack_type": "thunder",
+  "turn": 30,
+  "stats": {
+    "total_deaths": 36949,
+    "total_migration": 13043,
+    "disasters_used": {
+      "Plasma Storm": 6,
+      "Volcanic Eruption": 4,
+      "Hurricane": 4,
+      "Silent Thunderstorm": 1,
+      "Mudslide": 1,
+      "Firestorm": 4,
+      "Earthquake": 4,
+      "Acid Rain": 1,
+      "Toxic Smoke": 1,
+      "Tornado with Lightning": 1,
+      "Scalding Steam": 1,
+      "Poisonous Gas Leak": 1
+    },
+    "random_events_triggered": 1,
+    "max_fear_reached": 100,
+    "resistances_developed": 1,
+    "start_time": null
+  },
+  "save_time": "2025-11-20T00:00:10.653184"
+}
